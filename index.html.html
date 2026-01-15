@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贺明陆 - Minglu He</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #1a1a1a;
+        }
+
+        .chinese-name {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            margin: 15px 0;
+            font-size: 0.95em;
+        }
+
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .intro {
+            margin: 25px 0;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+
+        .intro strong {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        section {
+            margin: 45px 0;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        .project-item, .experience-item, .publication-item {
+            margin-bottom: 35px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .project-item:hover, .experience-item:hover, .publication-item:hover {
+            background: #f0f0f0;
+        }
+
+        .project-title, .experience-title, .pub-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .project-meta, .experience-meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 12px;
+        }
+
+        .project-description, .experience-description {
+            margin-top: 10px;
+            line-height: 1.7;
+        }
+
+        .project-description ul, .experience-description ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        .project-description li, .experience-description li {
+            margin: 5px 0;
+        }
+
+        .pub-authors {
+            color: #666;
+            font-size: 0.95em;
+            font-style: italic;
+            margin: 5px 0;
+        }
+
+        .awards-list, .skills-list, .activities-list {
+            list-style: none;
+        }
+
+        .awards-list li, .activities-list li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .awards-list li:before, .activities-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+        .skills-list li {
+            padding: 5px 0;
+        }
+
+        .skills-list strong {
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        .news-item {
+            padding: 8px 0;
+            border-left: 3px solid #0066cc;
+            padding-left: 15px;
+            margin: 10px 0;
+        }
+
+        .news-date {
+            color: #666;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        a {
+            color: #0066cc;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            margin-right: 8px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minglu He</h1>
+        <div class="chinese-name">贺明陆</div>
+        
+        <div class="contact-info">
+            <a href="mailto:heml2025@shanghaitech.edu.cn">Email</a> |
+            <a href="tel:+8617755848948">+86 177-5584-8948</a>
+        </div>
+
+        <div class="intro">
+            I am a Master's student in <strong>Mechanical Engineering</strong> at <a href="https://www.shanghaitech.edu.cn/" target="_blank">ShanghaiTech University</a>, advised by Prof. <strong>Guangping Xie</strong>. I received my Bachelor's degree in <strong>Optoelectronic Information Science and Engineering</strong> from <a href="https://www.sdu.edu.cn/" target="_blank">Shandong University</a>, where I was jointly trained at the <a href="http://www.siom.cas.cn/" target="_blank">Shanghai Institute of Optics and Fine Mechanics, Chinese Academy of Sciences</a>.
+            <br><br>
+            <strong>Research Interests:</strong> Machine Vision, Vision-Language Models, Optical Vision Systems
+        </div>
+    </header>
+
+    <section id="news">
+        <h2>News</h2>
+        <div class="news-item">
+            <span class="news-date">[09/2025]</span> Started my Master's program at ShanghaiTech University.
+        </div>
+        <div class="news-item">
+            <span class="news-date">[06/2025]</span> Graduated from Shandong University with a Bachelor's degree.
+        </div>
+        <div class="news-item">
+            <span class="news-date">[01/2025]</span> Our paper on cyanophage genomics was accepted!
+        </div>
+    </section>
+
+    <section id="research">
+        <h2>Research & Projects</h2>
+        
+        <div class="project-item">
+            <div class="project-title">Stereo Vision and Deep Learning for Industrial Defect Detection</div>
+            <div class="project-meta">ShanghaiTech University | Nov 2025 - Present | Advisor: Prof. Guangping Xie</div>
+            <div class="project-description">
+                <ul>
+                    <li>Developing real-time defect detection system for complex textured surfaces, identifying scratches, dents, and structural damages</li>
+                    <li>Researching PatchCore anomaly detection algorithm and PointNet++ point cloud segmentation with enhanced fusion methods</li>
+                    <li>Implementing decision-level fusion of 2D texture anomaly heatmaps and 3D geometric point cloud features</li>
+                </ul>
+                <div style="margin-top: 10px;">
+                    <span class="tag">Computer Vision</span>
+                    <span class="tag">Deep Learning</span>
+                    <span class="tag">3D Vision</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">PaddleOCR-based Industrial Label Detection System</div>
+            <div class="project-meta">ShanghaiTech University | Sep 2025 - Oct 2025 | Advisor: Prof. Guangping Xie</div>
+            <div class="project-description">
+                <ul>
+                    <li>Developed automated visual recognition and logic verification system for industrial nameplate inspection</li>
+                    <li>Core responsibility: Implemented PaddleOCR-based recognition algorithm achieving millisecond-level real-time reading</li>
+                    <li>Tech stack: Python, PaddleOCR (PP-OCRv4), OpenCV, MES Interface</li>
+                </ul>
+                <div style="margin-top: 10px;">
+                    <span class="tag">OCR</span>
+                    <span class="tag">Industrial AI</span>
+                    <span class="tag">System Integration</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">Optoelectronic Link Simulation for Optical Computing</div>
+            <div class="project-meta">Bachelor's Thesis | Shandong University | Jan 2025 - Jun 2025 | Advisor: Prof. Xiao Xu</div>
+            <div class="project-description">
+                <ul>
+                    <li>Developed compact model for optical neural network linear matrix computation in large-scale on-chip systems</li>
+                    <li>Built optical computing simulation chain for 6×6 and 16×16 matrix computation with systematic performance evaluation</li>
+                    <li>Achieved performance error less than 10% using commercial and custom-developed software</li>
+                </ul>
+                <div style="margin-top: 10px;">
+                    <span class="tag">Optical Computing</span>
+                    <span class="tag">Neural Networks</span>
+                    <span class="tag">Simulation</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">Mathematical Modeling Competition - Optimal Ship Route Design</div>
+            <div class="project-meta">CUMCM | Sep 2023 - Oct 2023 | Advisor: Prof. Junfeng Luan</div>
+            <div class="project-description">
+                <ul>
+                    <li>Developed optimal routing model for multi-beam echo sounder ships applicable to arbitrary sea areas</li>
+                    <li>Core responsibility: Mathematical modeling, algorithm design and optimization</li>
+                    <li>Award: Second Prize, Shandong Province</li>
+                </ul>
+                <div style="margin-top: 10px;">
+                    <span class="tag">Optimization</span>
+                    <span class="tag">Algorithm Design</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">Optical System Design and Engineering</div>
+            <div class="project-meta">Shandong University | Sep 2023 - Dec 2023 | Advisor: Prof. Zhongming Yang</div>
+            <div class="project-description">
+                <ul>
+                    <li>Completed reflective telescope system design using Zemax, eliminating aberrations through optimization</li>
+                    <li>Achieved diffraction-limited RMS wavefront error performance</li>
+                    <li>Performed tolerance analysis for rangefinder receiver system with cost-performance balance</li>
+                    <li>Generated AutoCAD optical component processing drawings compliant with GB/T standards</li>
+                </ul>
+                <div style="margin-top: 10px;">
+                    <span class="tag">Optical Design</span>
+                    <span class="tag">Zemax</span>
+                    <span class="tag">Engineering</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="publication-item">
+            <div class="pub-title">A Novel Long-tailed Myovirus Represents a New T4-like Cyanophage Cluster</div>
+            <div class="pub-authors">
+                Yuanfang Liu, Xue Meng, Hongrui Zheng, Lanlan Cai, Shuzhen Wei, <strong>Minglu He</strong>, Jiale He, Yue Hao, Chang Ge, Jihua Liu, Feng Chen, Yongle Xu
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <div class="experience-title">Application Engineer Intern</div>
+            <div class="experience-meta">Shanghai Manguang Information Technology Co., Ltd. | Jun 2025 - Aug 2025</div>
+            <div class="experience-description">
+                <ul>
+                    <li>Independently completed structural design of 2×2 MMI and construction of cascaded MZI optical computing chain</li>
+                    <li>Verified device loss metrics and chain logic correctness through FDTD simulation and actual measurements</li>
+                    <li>Packaged designs as standard examples for company EDA software and authored user manuals with technical documentation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities">
+        <h2>Academic Activities</h2>
+        <ul class="activities-list">
+            <li>Tsinghua University - Technical University of Munich Joint International Winter Camp on Intelligent Transportation (2022)</li>
+            <li>Peking University Computational Intelligence Lab Summer School on Swarm Intelligence (2023)</li>
+            <li>Harbin Institute of Technology International Summer School on Electronic Information (2023)</li>
+            <li>Hanyang University International Winter School (HIWS) (2024)</li>
+        </ul>
+    </section>
+
+    <section id="honors">
+        <h2>Honors & Awards</h2>
+        <ul class="awards-list">
+            <li>Second Prize, CUMCM National Mathematical Modeling Competition (Provincial Level)</li>
+            <li>Bronze Award, "Internet+" College Students Innovation and Entrepreneurship Competition</li>
+            <li>Winner Award, TAL Education AI Hackathon</li>
+            <li>Shandong University Innovation and Entrepreneurship Advanced Individual</li>
+            <li>Joint Training Scholarship, Shandong University - CAS Shanghai Institute of Optics and Fine Mechanics</li>
+            <li>Overseas Study Scholarship, Shandong University</li>
+            <li>Academic Scholarship, Shandong University</li>
+            <li>Outstanding Communist Youth League Member, Shandong University</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li><strong>Programming Languages:</strong> Python, MATLAB, C/C++, LaTeX</li>
+            <li><strong>Research Tools:</strong> VS Code, GitHub, Zemax, Lumerical, AutoCAD, Origin</li>
+            <li><strong>Language:</strong> CET-6: 468</li>
+        </ul>
+    </section>
+
+    <section id="service">
+        <h2>Student Leadership</h2>
+        <ul class="activities-list">
+            <li>Member of "Life·New Knowledge" Science Popularization Alliance (Provincial-level organization, Shandong)</li>
+            <li>Leader of "Life Sandbar" Volunteer Service Organization (University-level, Shandong University)</li>
+            <li>Chief Director of College Mid-Autumn Festival Gala, Club Leader, Academic Department Officer</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Last updated: January 2026</p>
+        <p>© 2026 Minglu He. All rights reserved.</p>
+    </footer>
+</body>
+</html>
