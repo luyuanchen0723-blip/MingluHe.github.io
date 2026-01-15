@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minglu He (贺明陆) - Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 60px;
+            align-items: flex-start;
+        }
+
+        .profile-img {
+            flex-shrink: 0;
+        }
+
+        .profile-img img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .profile-info h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .profile-info h3 {
+            font-size: 1.3em;
+            color: #666;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .contact-links {
+            margin: 15px 0;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            color: #0066cc;
+            text-decoration: none;
+            margin-right: 15px;
+            padding: 5px 0;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        .bio {
+            margin-top: 20px;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+
+        .bio a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .bio a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin: 50px 0;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #1a1a1a;
+        }
+
+        h2:before {
+            content: "# ";
+            color: #0066cc;
+        }
+
+        .news-item {
+            margin: 15px 0;
+            padding-left: 0;
+        }
+
+        .news-date {
+            color: #0066cc;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        .publication-item {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .pub-img {
+            flex-shrink: 0;
+        }
+
+        .pub-img img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+            background: #e0e0e0;
+        }
+
+        .pub-content h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .pub-authors {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .awards-list {
+            list-style: none;
+        }
+
+        .awards-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .awards-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0066cc;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .experience-item {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            align-items: center;
+        }
+
+        .exp-logo {
+            flex-shrink: 0;
+        }
+
+        .exp-logo img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+
+        .exp-content h3 {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .exp-content h3 a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+
+        .exp-content h3 a:hover {
+            color: #0066cc;
+        }
+
+        .exp-role {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            .publication-item, .experience-item {
+                flex-direction: column;
+            }
+
+            .pub-img img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-img">
+                <img src="profile.jpg" alt="Minglu He">
+            </div>
+            
+            <div class="profile-info">
+                <h1>Minglu He</h1>
+                <h3>贺明陆</h3>
+                
+                <div class="contact-links">
+                    <span>Focusing on Computer Vision, Vision-Language-Action (VLA) in Embodied AI, Optical Vision Systems.</span>
+                    <br><br>
+                    <span>📍 Shanghai</span>
+                    <br>
+                    <a href="mailto:heml2025@shanghaitech.edu.cn">Email</a> |
+                    <a href="https://github.com/MingluHe" target="_blank">Github</a> |
+                    <a href="https://scholar.google.com/citations?hl=zh-CN&user=sjO-EMgAAAAJ" target="_blank">Google Scholar</a>
+                </div>
+
+                <div class="bio">
+                    I am currently a Master's student in Mechanical Engineering at <a href="https://www.shanghaitech.edu.cn/" target="_blank">ShanghaiTech University</a>, advised by Prof. Guangping Xie. 
+                    <br><br>
+                    I am now a Research Intern at the <a href="https://ai.sjtu.edu.cn/" target="_blank">School of Artificial Intelligence</a>, <a href="https://www.sjtu.edu.cn/" target="_blank">Shanghai Jiao Tong University</a>, advised by Prof. <a href="https://zhipengzhang.cn/" target="_blank">Zhipeng Zhang</a>.
+                    <br><br>
+                    I received my Bachelor's degree in Optoelectronic Information Science and Engineering from <a href="https://www.sdu.edu.cn/" target="_blank">Shandong University</a>, where I was jointly trained at the <a href="http://www.siom.cas.cn/" target="_blank">Shanghai Institute of Optics and Fine Mechanics, Chinese Academy of Sciences</a>.
+                </div>
+            </div>
+        </header>
+
+        <section id="news">
+            <h2>News</h2>
+            <div class="news-item">
+                <span class="news-date">*2026.01*:</span> Started Research Intern at Shanghai Jiao Tong University!
+            </div>
+            <div class="news-item">
+                <span class="news-date">*2025.09*:</span> Started my Master's program at ShanghaiTech University.
+            </div>
+            <div class="news-item">
+                <span class="news-date">*2025.06*:</span> Graduated from Shandong University with a Bachelor's degree.
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            
+            <div class="publication-item">
+                <div class="pub-img">
+                    <img src="https://via.placeholder.com/200x150/e3f2fd/1976d2?text=Cyanophage" alt="Publication">
+                </div>
+                
+                <div class="pub-content">
+                    <h3>A Novel Long-tailed Myovirus Represents a New T4-like Cyanophage Cluster</h3>
+                    <div class="pub-authors">
+                        Yuanfang Liu, Xue Meng, Hongrui Zheng, Lanlan Cai, Shuzhen Wei, <strong>Minglu He</strong>, Jiale He, Yue Hao, Chang Ge, Jihua Liu, Feng Chen, Yongle Xu
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="honors">
+            <h2>Honors and Awards</h2>
+            <ul class="awards-list">
+                <li><em>2023.10</em> Second Prize, CUMCM National Mathematical Modeling Competition (Provincial Level)</li>
+                <li>Bronze Award, "Internet+" College Students Innovation and Entrepreneurship Competition</li>
+                <li>Winner Award, TAL Education AI Hackathon</li>
+                <li>Shandong University Innovation and Entrepreneurship Advanced Individual</li>
+                <li>Joint Training Scholarship, Shandong University - CAS Shanghai Institute of Optics and Fine Mechanics</li>
+                <li>Overseas Study Scholarship, Shandong University</li>
+                <li>Academic Scholarship, Shandong University</li>
+                <li>Outstanding Communist Youth League Member, Shandong University</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Working Experience</h2>
+            
+            <div class="experience-item">
+                <div class="exp-logo">
+                    <img src="https://ai.sjtu.edu.cn/images/logo.png" alt="SJTU" onerror="this.src='https://via.placeholder.com/80/c41e3a/ffffff?text=SJTU'">
+                </div>
+                <div class="exp-content">
+                    <h3><a href="https://ai.sjtu.edu.cn/" target="_blank">School of Artificial Intelligence, Shanghai Jiao Tong University</a></h3>
+                    <div class="exp-role">Research Intern, 2026.01 - Present</div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-logo">
+                    <img src="https://www.shanghaitech.edu.cn/_upload/tpl/05/41/1345/template1345/img/logo.png" alt="ShanghaiTech" onerror="this.src='https://via.placeholder.com/80/003d7a/ffffff?text=ShanghaiTech'">
+                </div>
+                <div class="exp-content">
+                    <h3><a href="https://www.shanghaitech.edu.cn/" target="_blank">ShanghaiTech University</a></h3>
+                    <div class="exp-role">Master's Student, 2025.09 - Present</div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-logo">
+                    <img src="https://via.placeholder.com/80/1976d2/ffffff?text=Max-Optics" alt="Max-Optics">
+                </div>
+                <div class="exp-content">
+                    <h3><a href="http://www.max-optics.com/" target="_blank">Shanghai Manguang Information Technology Co., Ltd.</a></h3>
+                    <div class="exp-role">Research Intern, 2025.06 - 2025.08</div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-logo">
+                    <img src="https://www.sdu.edu.cn/__local/B/24/50/B4E3B5733E89DB4AA197B424E4E_C77E4295_2799.png" alt="SDU" onerror="this.src='https://via.placeholder.com/80/002e82/ffffff?text=SDU'">
+                </div>
+                <div class="exp-content">
+                    <h3><a href="https://www.sdu.edu.cn/" target="_blank">Shandong University</a></h3>
+                    <div class="exp-role">Bachelor's Student, 2021.09 - 2025.06</div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-logo">
+                    <img src="http://www.siom.cas.cn/images/logo.png" alt="SIOM" onerror="this.src='https://via.placeholder.com/80/c8102e/ffffff?text=SIOM'">
+                </div>
+                <div class="exp-content">
+                    <h3><a href="http://www.siom.cas.cn/" target="_blank">Shanghai Institute of Optics and Fine Mechanics, Chinese Academy of Sciences</a></h3>
+                    <div class="exp-role">Joint Training, 2023.11 - 2025.06</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities">
+            <h2>Academic Activities</h2>
+            
+            <div class="experience-item">
+                <div class="exp-logo">
+                    <img src="https://www.tsinghua.edu.cn/__local/C/52/17/134F37F226BE4BA37DC0190F160_D15F5C94_2886.png" alt="Tsinghua" onerror="this.src='https://via.placeholder.com/80/510074/ffffff?text=THU'">
+                </div>
+                <div class="exp-content">
+                    <h3>Tsinghua University - Technical University of Munich</h3>
+                    <div class="exp-role">Joint International Winter Camp on Intelligent Transportation, 2022</div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-logo">
+                    <img src="https://www.pku.edu.cn/Uploads/Picture/2021/11/11/s619cdf3bb1e8b.png" alt="PKU" onerror="this.src='https://via.placeholder.com/80/c41e3a/ffffff?text=PKU'">
+                </div>
+                <div class="exp-content">
+                    <h3>Peking University Computational Intelligence Lab</h3>
+                    <div class="exp-role">Summer School on Swarm Intelligence, 2023</div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-logo">
+                    <img src="https://via.placeholder.com/80/003d7a/ffffff?text=HIT" alt="HIT">
+                </div>
+                <div class="exp-content">
+                    <h3>Harbin Institute of Technology</h3>
+                    <div class="exp-role">International Summer School on Electronic Information, 2023</div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-logo">
+                    <img src="https://via.placeholder.com/80/002e82/ffffff?text=Hanyang" alt="Hanyang">
+                </div>
+                <div class="exp-content">
+                    <h3>Hanyang University</h3>
+                    <div class="exp-role">International Winter School (HIWS), 2024</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Last updated: January 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
